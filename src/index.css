@@ -20,8 +20,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0 auto;
   background: no-repeat url(./assets/bg-intro-mobile.png) fixed center / cover;
@@ -32,8 +30,6 @@ body {
   font-family: var(--font-family);
   color: var(--primary-white);
 }
-
-
 
 @media (min-width: 600px) {
   

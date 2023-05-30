@@ -1,0 +1,40 @@
+:root {
+  /* colors */
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --primary-white: hsl(0, 0%, 100%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-gray-blue: hsl(246, 25%, 77%);
+
+  /* typography */
+  --font-family: 'Poppins', san-serif;
+  --font-reg: 400;
+  --font-med: 500;
+  --font-bold: 600;
+  --font-bolder: 700;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0 auto;
+  background: no-repeat url(./assets/bg-intro-mobile.png) fixed center / cover;
+  background-color: var(--primary-red);
+  padding: 6em 2em;
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--font-family);
+  color: var(--primary-white);
+}
+
+
+
+@media (min-width: 600px) {
+  
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 
 export default function Form() {
     const [formData, setFormData] = React.useState({
@@ -7,6 +7,7 @@ export default function Form() {
         email: '',
         password: ''
     })
+    const [errorMessage, setErrorMessage] = React.useState({})
   
     function handleChange(event) {
         const {name, value} = event.target
@@ -18,26 +19,38 @@ export default function Form() {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(event)
-        const form = event.target
-        const {firstName, lastName, email, password} = formData
+        setErrorMessage(validator(formData, event))
+    }
 
-        if (firstName != '' && lastName != '' && email != '' && password != '') {
-            console.log('success')
-            
-        } else {
-            console.log('missing form info')
-            switch (firstName === '' | lastName === '' | email === '' | password === '') {
-                case firstName === '':
-                    form.firstName.focus()
-                case lastName === '':
-                    form.lastName.focus()
-                    break;
-                    
-            }
-            
-            
+    function validator(data, event) {
+        let errors = {}
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,}$/
+
+        if(data.firstName === '') {
+            errors.firstName = 'First name cannot be empty'
+            event.target.firstName.focus()
         }
+
+        if(data.lastName === '') {
+            errors.lastName = 'Last name cannot be empty'
+            event.target.lastName.focus()
+        }
+
+        if(data.email === '') {
+            errors.email = 'Email cannot be empty'
+            event.target.email.focus()
+        } else if (!emailPattern.test(data.email)) {
+            errors.email = "Looks like that's not an email"
+            event.target.email.focus()
+        }
+
+        if(data.password === '') {
+            errors.password = 'Password cannot be empty'
+            event.target.password.focus()
+        }
+
+        return errors
+
     }
 
     return (
@@ -54,6 +67,7 @@ export default function Form() {
                     onChange={handleChange}
                     value={formData.firstName}
                 />
+                {errorMessage.firstName && <p className='error-msg'>{errorMessage.firstName}</p>}
                 <input 
                     type="text" 
                     name="lastName" 
@@ -62,14 +76,16 @@ export default function Form() {
                     onChange={handleChange}
                     value={formData.lastName} 
                 />
+                {errorMessage.lastName && <p className='error-msg'>{errorMessage.lastName}</p>}
                 <input 
-                    type="email" 
+                    type="text" 
                     name="email" 
                     id="email" 
                     placeholder='Email Address'
                     onChange={handleChange}
                     value={formData.email} 
                 />
+                {errorMessage.email && <p className='error-msg'>{errorMessage.email}</p>}
                 <input 
                     type="password" 
                     name="password" 
@@ -78,6 +94,7 @@ export default function Form() {
                     onChange={handleChange}
                     value={formData.password} 
                 />
+                {errorMessage.password && <p className='error-msg'>{errorMessage.password}</p>}
                 <button className='form-container--btn'>
                     Claim your free trial
                 </button>

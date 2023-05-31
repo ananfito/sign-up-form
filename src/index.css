@@ -15,6 +15,9 @@
   --font-bolder: 700;
 }
 
+
+/* BASE STYLES */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -34,11 +37,18 @@ body {
   align-items: center;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (min-width: 800px) {
   body {
     background: no-repeat url(./assets/bg-intro-desktop.png) fixed center / cover;
     background-color: var(--primary-red);
-    padding: 0;
   }
-  
+}
+
+@media (max-height: 750px) {
+  body {
+    height: 100%;
+  }
 }

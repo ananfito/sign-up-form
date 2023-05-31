@@ -4,11 +4,15 @@
   margin: 0 auto;
   width: 100vw;
   max-width: 1000px;
-  padding: 0 3em;
+  padding: 2em;
 }
 
 
 /* HEADER */
+
+.header {
+  margin-bottom: 2em;
+}
 
 .header--title, .header--text {
   margin: 1em 0;
@@ -88,6 +92,9 @@
   cursor: pointer;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (min-width: 800px) {
   .container {
     display: flex;
@@ -98,11 +105,10 @@
   }
 
   .header {
-    margin-right: 2em;
+    padding: 0 3em 0 0;
   }
 
   .form-container {
     max-width: 600px
-
   }
 }

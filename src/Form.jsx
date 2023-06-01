@@ -97,7 +97,7 @@ export default function Form() {
                 <button className='form-container--btn'>
                     Claim your free trial
                 </button>
-                <p className='terms'>By clicking the button, you are agreeing to our <a>Terms and Sercives</a></p>
+                <p className='terms'>By clicking the button, you are agreeing to our <a>Terms and Services</a></p>
             </form>
         </section>
     )

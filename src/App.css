@@ -99,9 +99,8 @@
   .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-basis: max-content;
   }
 
   .header {
@@ -109,6 +108,6 @@
   }
 
   .form-container {
-    max-width: 600px
+    max-width: 600px;
   }
 }

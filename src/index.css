@@ -47,7 +47,7 @@ body {
   }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 750px) and (max-width: 600px) {
   body {
     height: 100%;
   }

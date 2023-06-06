@@ -111,4 +111,4 @@ function handleSubmit(event) {
 
 ## Acknowledgements 
 
-Special thanks to Chamu in the Frontend Mentor Discord community for giving me feedback on how to fix the form width issue I was having with this project. Much appreacited! 
+Special thanks to Chamu in the [Frontend Mentor Discord community](https://discord.gg/UAfh3qzhYb) for giving me feedback on how to fix the form width issue I was having with this project. Much appreacited! 

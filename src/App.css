@@ -7,6 +7,10 @@
   padding: 2em;
 }
 
+.header, .form-container {
+  flex-basis: 1 1 50%;
+}
+
 
 /* HEADER */
 
@@ -47,7 +51,7 @@
   color: var(--neutral-gray-blue);
 }
 
-.form-container--form > input {
+.input {
   border: 1px solid var(--neutral-gray-blue);
   border-radius: 3px;
   font-family: inherit;
@@ -73,11 +77,24 @@
   box-shadow: 0 3px hsl(156, 59%, 40%);
 }
 
+.label {
+  position: relative;
+}
+
 .error-msg {
+  position: absolute;
+  top: 38px;
+  right: 2px;
   color: var(--primary-red);
   font-size: .6rem;
   font-style: italic;
   text-align: right;
+}
+
+.error-img {
+  position: absolute;
+  top: 0px;
+  right: 20px;
 }
 
 .terms {

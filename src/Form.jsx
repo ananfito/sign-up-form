@@ -92,6 +92,7 @@ export default function Form() {
                     {errorMessage.lastName && <img alt='red exclamation mark' src={errorImgUrl} className='error-img'/>}
                     {errorMessage.lastName && <p className='error-msg'>{errorMessage.lastName}</p>}
                 </label>
+                
                 <label htmlFor="email" className="label">
                     <input
                         className='input'
@@ -105,7 +106,7 @@ export default function Form() {
                     {errorMessage.email && <img alt='red exclamation mark' src={errorImgUrl} className='error-img'/>}
                     {errorMessage.email && <p className='error-msg'>{errorMessage.email}</p>}
                 </label>
-                
+
                 <label htmlFor="password" className="label">
                     <input
                         className='input'

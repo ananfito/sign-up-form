@@ -108,3 +108,7 @@ function handleSubmit(event) {
 - Frontend Mentor - [@ananfito](https://www.frontendmentor.io/profile/ananfito)
 - Mastodon - [@infinifito@hachyderm.io](https://hachyderm.io/@infinifito)
 - Twitter - [@wordsbyfifi](https://www.twitter.com/wordsbyfifi)
+
+## Acknowledgements 
+
+Special thanks to Chamu in the Frontend Mentor Discord community for giving me feedback on how to fix the form width issue I was having with this project. Much appreacited! 

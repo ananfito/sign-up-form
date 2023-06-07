@@ -24,7 +24,6 @@ export default function Form() {
     }
 
     function validator(data, event) {
-        console.log(event.target)
         let errors = {}
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,}$/
 

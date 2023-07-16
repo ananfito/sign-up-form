@@ -30,11 +30,11 @@ Users should be able to:
 
 #### Desktop
 
-![](./screenshot_sign-up-form_desktop.png)
+![Sign-up form for coding course asking for first name, last name, email address, and password](./screenshot_sign-up-form_desktop.png)
 
 #### Mobile
 
-![](./screenshot_sign-up-form_mobile.png)
+![Sign-up form for coding course asking for first name, last name, email address, and password](./screenshot_sign-up-form_mobile.png)
 
 ### Links
 

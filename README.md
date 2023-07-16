@@ -104,10 +104,10 @@ function handleSubmit(event) {
 
 ## Author
 
-- Website - [Web Dev Portfolio](https://ananfito.github.io)
-- Frontend Mentor - [@ananfito](https://www.frontendmentor.io/profile/ananfito)
-- Mastodon - [@infinifito@hachyderm.io](https://hachyderm.io/@infinifito)
-- Twitter - [@wordsbyfifi](https://www.twitter.com/wordsbyfifi)
+- <a href="mailto:msg.for.anthony.p6ht3@simplelogin.com?subject=Nice GitHub Project&body=Hey Anthony, I saw your GitHub project. Let's talk!">Email</a>
+- [LinkedIn](https://linkedin.com/in/anthonynanfito)
+- [Portfolio](https://ananfito.github.io)
+- [Blog](https://ananfito.hashnode.dev)
 
 ## Acknowledgements 
 
